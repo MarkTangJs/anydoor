@@ -1,8 +1,11 @@
 {
   "name": "anydoor",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "This NodeJS Static Web Server",
-  "main": ".eslintrc.js",
+  "main": "src/app.js",
+  "bin": {
+    "anydoor": "bin/anydoor"
+  },
   "scripts": {
     "lint": "eslint .",
     "fix": "eslint --fix"
@@ -27,6 +30,8 @@
     "pre-commit": "^1.2.2"
   },
   "dependencies": {
-    "chalk": "^2.4.1"
+    "chalk": "^2.4.1",
+    "handlebars": "^4.0.11",
+    "yargs": "^11.0.0"
   }
 }
